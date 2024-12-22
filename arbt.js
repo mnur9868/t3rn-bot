@@ -165,13 +165,13 @@ const CONTRACT_ADDRESS = T3RN_ABI.at(-1).CA_ARBT;
             console.log(
               `🔗 [ ${moment().format(
                 'HH:mm:ss'
-              )} ] Transaction hash: https://sepolia-explorer.arbitrum.io/tx/${
+              )} ] Transaction hash: https://sepolia.arbiscan.io/tx/${
                 result.hash
               }`.green
             );
             fs.writeFileSync(
               TOKEN_FILE_PATH,
-              `https://sepolia-explorer.arbitrum.io/tx/${result.hash}`
+              `https://sepolia.arbiscan.io/tx/${result.hash}`
             );
             console.log(
               '✅ Transaction hash url has been saved to ARBT_TX_HASH.txt.'
